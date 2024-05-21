@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Documento</title>
+    <link rel="stylesheet" href="food-menu-style.css">
+    <script src = "../main.js">
+    </script>
+
+</head>
+<body>
+    
+    <header class = "heading">MENÚ ALIMENTARIO</header>
+   
+    <div class="head-grid">
+        <p class="head-left">Cronometraje</p>
+        <p class="head-center">Menu</p>
+        
+    </div>                                                                                                                                                                                                               
+    <div class="grid">
+        
+        <div class="left">
+            <button class="time morning" value="food" id = "morning" onclick = "visible_morning(event)">Desayuno</button><br>
+            <button class="time afternoon" value = "food" id = "afternoon"onclick = "visible_lunch(event)">Almuerzo</button>
+            <button class="time snack"value = "food" id = "snack"onclick = "visible_snacks(event)">Aperitivos</button>
+            <a href="../home/index.html"><button class="time back"onclick = "back(event)">Atras</button></a>
+            
+        </div>
+    
+        <div class="center">
+                <ul class="breakfast" id = "breakfast">
+                   
+                    <li class=" frames idly">
+                        <button class  = "frames frames-button" id = "idly"value = "Idly"onclick = "add(event,'Casi Yaroa')">
+                            <img src="../images/papasfritas.jpg" alt="Idly" class="img-food img-idly">
+                            <ol class="main-details idly-details">
+                                <li class="name idlylist-name">
+                                    <label>Artículo : </label>
+                                    <label>Casi Yaroa/Salami </label></li>
+                                <li class="quantity idlylist-quantity">
+                                    <label>Cantidad : </label>
+                                    <label>1</label>
+                                </li>
+                                <li class="price idlylist-price">
+                                    <label>Precio : </label>
+                                    <label>75 Pesos</label>
+                                </li>
+                            </ol>
+                        </button>
+                    </li>
+                    
+                    <li class="frames poori">
+                        <button class="frames frames-button" value = "Poori"onclick = "add(event,'Tostada')">
+                        <img src="../images/Tostada.jpg" alt="Idly" class="img-food img-poori">
+                        <ol class="main-details poori-details">
+                            <li class="name poorilist-name">
+                                <label> Artículo: </label>
+                                <label>Tostada</label>
+                            </li>
+                            <li class="quantity poorilist-quantity">
+                                <label>Cantidad : </label>
+                                <label>1</label>
+                            </li>
+                            <li class="price poorilist-price">
+                                <label>Precio : </label>
+                                <label>40 Pesos</label>
+                            </li>
+                            </button>
+                        </ol>
+                        
+                    </li>
+                    
+                    <li class="frames dosa">
+                        <button class="frames frames-button" value = "Dosa"onclick = "add(event,'Pizza Con salami')">
+                        <img src="../images/pizza.jpg" alt="Idly" class="img-food img-dosa">
+                        <ol class="main-details dosa-details">
+                            <li class="name dosalist-name">
+                                <label>Articulo : </label>
+                                <label>Pizza con Salami</label>
+                            </li>
+                            <li class="quantity dosalist-quantity">
+                                <label>Cantidad : </label>
+                                <label>1</label>
+                            </li>
+                            <li class="price dosalist-price">
+                                <label>Precio : </label>
+                                <label>60 Pesos</label>
+                            </li>
+                        </ol>
+                        </button>
+                        
+                    </li>
+                    
+                    <li class="frames pongal">
+                        <button class="frames frames-button" value="Pongal"onclick = "add(event,'CHimi Escolar')">
+                        <img src="../images/Chimi Escolar.jpg" alt="Idly" class="img-food img-pongal">
+                        <ol class="main-details pongal-details">
+                            <li class="name pongallist-name">
+                                <label>Articulo : </label>
+                                <label>Chimi Escolar</label>
+                            </li>
+                            <li class="quantity pongallist-quantity">
+                                <label>Cantidad : </label>
+                                <label>1</label>
+                            </li>
+                            <li class="price pongallist-price">
+                                <label>Precio : </label>
+                                <label>45 Pesos</label>
+                            </li>
+                        </ol>
+                        </button>
+                    </li>
+                </ul>
+                <ul class="lunch"id = "lunch">
+                    
+                    <li class=" frames parotta">
+                        <button class="frames frames-button" value="Parotta"onclick = "add(event,'Espaguetis')">
+                        <img src="../images/Espagueti.jpg" alt="parotta" class="img-food img-parotta">
+                        <ol class="main-details parotta-details">
+                            <li class="name parottalist-name">
+                                <label>Articulo : </label>
+                                <label>Espaguetis</label>
+                            </li>
+                            <li class="quantity parottalist-quantity">
+                                <label>Cantidad : </label>
+                                <label>1</label>
+                            </li>
+                            <li class="price parottalist-price">
+                                <label>Precio : </label>
+                                <label>50 Pesos</label>
+                            </li>
+                        </ol>
+                        </button>
+                    </li>
+                   
+                    <li class="frames meals">
+                        <button class="frames frames-button" value="Meals"onclick = "add(event,'Arroz con Maiz')">
+                        <img src="../images/Arroz con maiz.jpg" alt="meals" class="img-food img-meals">
+                        <ol class="main-details meals-details">
+                            <li class="name mealslist-name">
+                                <label>Articulo : </label>
+                                <label>Arro con mai</label>
+                            </li>
+                            <li class="quantity mealslist-quantity">
+                                <label>Cantidad : </label>
+                                <label>1</label>
+                            </li>
+                            <li class="price mealslist-price">
+                                <label>Precio : </label>
+                                <label>65 Pesos</label>
+                            </li>
+                        </ol>
+                        </button>
+                    </li>
+                   
+                    <li class="frames tomato-rice">
+                        <button class="frames frames-button" value="Tomato Rice"onclick = "add(event,'Locrio')">
+                        <img src="../images/locrio.jpg" alt="tomato-rice" class="img-food img-tomato-rice">
+                        <ol class="main-details tomato-rice-details">
+                            <li class="name tomato-ricelist-name">
+                                <label>Articulo : </label>
+                                <label>Locrio</label>
+                            </li>
+                            <li class="quantity tomato-ricelist-quantity">
+                                <label>Cantidad : </label>
+                                <label>1</label>
+                            </li>
+                            <li class="price tomato-ricelist-price">
+                                <label>Precio : </label>
+                                <label>75 Pesos</label>
+                            </li>
+                        </ol>
+                        </button>
+                    </li>
+                    
+                    <li class="frames veg-biriyani">
+                        <button class="frames frames-button" value="Veg Biriyani"onclick = "add(event,'Arroz Blanco')">
+                        <img src="../images/arroz.jpg" alt="veg-biriyani" class="img-food img-veg-biriyani">
+                        <ol class="main-details veg-biriyani-details">
+                            <li class="name veg-biriyanilist-name">
+                                <label>Articulo : </label>
+                                <label>Arroz</label>
+                            </li>
+                            <li class="quantity veg-biriyanilist-quantity">
+                                <label>Cantiddad : </label>
+                                <label>1</label>
+                            </li>
+                            <li class="price veg-biriyanilist-price">
+                                <label>Precio : </label>
+                                <label>50 Pesos</label>
+                            </li>
+                        </ol>
+                        </button>
+                    </li>
+                </ul>
+                <ul class="snacks"id = "snacks">
+                    
+                    <li class="frames tea">
+                        <button class="frames frames-button" value="Tea"onclick = "add(event,'Frutop')">
+                        <img src="../images/fruto.jpg" alt="Tea" class="img-food img-veg-biriyani">
+                        <ol class="main-details Tea-details">
+                            <li class="name tealist-name">
+                                <label>Articulo : </label>
+                                <label>fruto</label>
+                            </li>
+                            <li class="quantity tealist-quantity">
+                                <label>Cantidad : </label>
+                                <label>1</label>
+                            </li>
+                            <li class="price tealist-price">
+                                <label>Precio : </label>
+                                <label>25 Pesos</label>
+                            </li>
+                        </ol>
+                        </button>
+                    </li>
+                    
+                    <li class="frames coffee">
+                        <button class="frames frames-button" value="coffee"onclick = "add(event,'Mikiwey')">
+                        <img src="../images/Mikiwey.jpg" alt="coffee" class="img-food img-veg-biriyani">
+                        <ol class="main-details coffee-details">
+                            <li class="name coffeelist-name">
+                                <label>Articulo : </label>
+                                <label>Mikiwey tusabe</label>
+                            </li>
+                            <li class="quantity coffeelist-quantity">
+                                <label>Cantidad : </label>
+                                <label>1</label>
+                            </li>
+                            <li class="price coffeelist-price">
+                                <label>Precio : </label>
+                                <label>35 Pesos</label>
+                            </li>
+                        </ol>
+                        </button>
+                    </li>
+                    
+                    <li class="frames Samosa">
+                        <button class="frames frames-button" value="Samosa"onclick = "add(event,'Papita Amarilla')">
+                        <img src="../images/papita.jpg" alt="samosa" class="img-food img-veg-biriyani">
+                        <ol class="main-details samosa-details">
+                            <li class="name samosalist-name">
+                                <label>Articulo : </label>
+                                <label>Papita amarilla</label>
+                            </li>
+                            <li class="quantity samosalist-quantity">
+                                <label>Cantidad : </label>
+                                <label>1</label>
+                            </li>
+                            <li class="price samosalist-price">
+                                <label>Precio : </label>
+                                <label>15 Pesos</label>
+                            </li>
+                        </ol>
+                        </button>
+                    </li>
+                </ul>
+        </div>  
+       
+        <div class="right">
+            <div class="full">
+            <image>
+           
+            <div>
+            <center><img src="../images/dummy.webp" alt="picture" width="200" height="200"></center>
+            </div>
+            </image>
+            <br>
+            <div class="details">
+            <div>
+            <p>Nombre: <span>Naruto Azumaki</span></p>
+            <br>
+            <p>Numero: <span>20BCS000</span></p>
+            <br>
+            <p> Saldo <span>1500</span></p>
+            </div>
+            </div>
+            <br>
+            </div>
+            <div class="cart">
+                <div class="mainframe">
+                    <p class="head-cart">Cartera</p>
+                    <hr>
+                    <form id = "cart-list"></form>
+                </div>
+                <footer>
+                    <button class="submit"id = "submit"onclick = "final_submit(event)">
+                        ENVIAR
+                    </button>
+                </footer>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>
