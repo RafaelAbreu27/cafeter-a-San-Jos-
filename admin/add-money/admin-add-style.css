@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #00ccff;
+    font-family: 'Roboto';
+}
+
+/*main frame*/
+.frame {
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 350px;
+  }
+  
+/*money*/
+.money-label {
+    font-size: 29px;
+    color :#00256f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.line {
+    height : 4px;
+    background-color: black;
+}
+
+/*form*/
+ .form {
+    display : flex;
+    color :#00256f;
+    margin-top : 30px;
+    font-size: 30px;
+ }
+
+.add {
+    margin-left : 60px;
+ }
+
+.money {
+    margin-left: 30px;
+}
+
+.buttons {
+    display : flex;
+    border : 2 px solid whitesmoke;
+    border-radius: 10px;
+    padding : 20px;
+    font-size: 20px;
+    width : 100px;
+    height: 70px;
+    
+}
+
+.home {
+    border-radius: 5px;
+    padding : 0 30px;
+    color : black;
+    background-color: skyblue;
+    
+}
+
+.ok-button {
+    border-radius: 5px;
+    padding: 0 30px;
+    margin-left : 161px;
+    color : black;
+    background-color: rgb(143, 227, 255);
+}
+
+/*hover*/
+.money:hover {
+    border : 2px solid skyblue;
+}
+
+.home:hover,.ok-button:hover {
+    transform: scale(1.1);
+}

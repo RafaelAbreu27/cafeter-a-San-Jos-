@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Documento</title>
+    <link rel="stylesheet" href="food-menu-update-style.css">
+    <script src="../../main.js"></script>
+</head>
+<body>
+    <!--heading-->
+    <header class = "heading">Actualizar</header>
+    <!--grid layout-->
+    <div class="head-grid">
+        <p class="head-left">Cronometraje</p>
+        <p class="head-center">Menu</p>
+        
+    </div>
+    <div class="grid">
+        <!--left layout-->
+        <div class="left">
+            <button class="time breakfast" value="food">Desayuno</button><br>
+            <button class="time lunch">Almuerzo</button>
+            <button class="time snacks">Aperitivos</button>
+            <a href="../../admin/admin details/admin-details.html"><button class="time back">Atras</button></a>
+        </div>
+        <!--center layout-->
+        <div class="center">
+                <ul class="breakfast">
+                    <!--idly-->
+                    <li class=" frames idly">
+                        <button class  = "frames frames-button" value = "Idly"onclick = "admin_update(event,'idly')">
+                            <img src="../../images/idly.jpg" alt="Idly" class="img-food img-idly">
+                            <ol class="main-details idly-details">
+                                <li class="name idlylist-name">
+                                    <label>papasfritas</label>
+                                </li>
+                            </ol>
+                        </button>
+                    </li>
+                    <!--poori-->
+                    <li class="frames poori">
+                        <button class="frames frames-button" value = "Poori">
+                        <img src="../../images/poori.jpg" alt="Idly" class="img-food img-poori">
+                        <ol class="main-details poori-details">
+                            <li class="name poorilist-name">
+                                <label>Tostada</label>
+                            </li>
+                            </button>
+                        </ol>
+                        
+                    </li>
+                    <!--dosa-->
+                    <li class="frames dosa">
+                        <button class="frames frames-button" value = "Dosa">
+                        <img src="../../images/doas.jpg" alt="Dosa" class="img-food img-dosa">
+                        <ol class="main-details dosa-details">
+                            <li class="name dosalist-name">
+                                <label>Pizza</label>
+                            </li>
+                        </ol>
+                        </button>
+                        
+                    </li>
+                  
+                    <li class="frames pongal">
+                        <button class="frames frames-button" value="Pongal">
+                        <img src="../../images/pongal.jpg" alt="Pongal" class="img-food img-pongal">
+                        <ol class="main-details pongal-details">
+                            <li class="name pongallist-name">
+                                <label>Chimi</label>
+                            </li>
+                        </ol>
+                        </button>
+                    </li>
+                </ul>
+                <ul class="lunch">
+                  
+                    <li class=" frames parotta">
+                        <button class="frames frames-button" value="Parotta">
+                        <img src="../../images/parotta.jpg" alt="parotta" class="img-food img-parotta">
+                        <ol class="main-details parotta-details">
+                            <li class="name parottalist-name">
+                                <label>Espagueti</label>
+                            </li>
+                        </ol>
+                        </button>
+                    </li>
+                    <!--meals-->
+                    <li class="frames meals">
+                        <button class="frames frames-button" value="Meals">
+                        <img src="../../images/meals.jpg" alt="meals" class="img-food img-meals">
+                        <ol class="main-details meals-details">
+                            <li class="name mealslist-name">
+                                <label>Arroz</label>
+                            </li>
+                        </ol>
+                        </button>
+                    </li>
+                    <!--tomato rice-->
+                    <li class="frames tomato-rice">
+                        <button class="frames frames-button" value="Tomato Rice">
+                        <img src="../../images/tomato-rice.jpg" alt="tomato-rice" class="img-food img-tomato-rice">
+                        <ol class="main-details tomato-rice-details">
+                            <li class="name tomato-ricelist-name">
+                                <label>locrio</label>
+                            </li>
+                        </ol>
+                        </button>
+                    </li>
+                   
+                    <li class="frames veg-biriyani">
+                        <button class="frames frames-button" value="Veg Biriyani">
+                        <img src="../../images/veg-biriyani.jpg" alt="veg-biriyani" class="img-food img-veg-biriyani">
+                        <ol class="main-details veg-biriyani-details">
+                            <li class="name veg-biriyanilist-name">
+                                <label>Locrio</label>
+                            </li>
+                        </ol>
+                        </button>
+                    </li>
+                  
+                    <li class="frames tea">
+                        <button class="frames frames-button" value="Tea">
+                        <img src="../../images/tea.jpg" alt="Tea" class="img-food img-veg-biriyani">
+                        <ol class="main-details Tea-details">
+                            <li class="name Tealist-name">
+                                <label>Frutop</label>
+                            </li>
+                        </ol>
+                        </button>
+                    </li>
+                    
+                    <li class="frames coffee">
+                        <button class="frames frames-button" value="coffee">
+                        <img src="../../images/coffee.jpg" alt="coffee" class="img-food img-veg-biriyani">
+                        <ol class="main-details coffee-details">
+                            <li class="name coffee-name">
+                                <label>Mikiwey</label>
+                            </li>
+                        </ol>
+                        </button>
+                    </li>
+                   
+                    <li class="frames Samosa">
+                        <button class="frames frames-button" value="Samosa">
+                        <img src="../../images/samosa.jpeg" alt="samosa" class="img-food img-veg-biriyani">
+                        <ol class="main-details samosa-details">
+                            <li class="name samosalist-name">
+                                <label>Papita</label>
+                            </li>
+                        </ol>
+                        </button>
+                    </li>
+                </ul>
+        </div>
+        
+    </div>
+    <script href = "../main.js">
+        const { ipcRenderer } = require('electron');
+        const ul = document.getElementById('crat-list');
+        document.addEventListener('click', (event) => {
+        if (event.target.classList.contains('frames-button')) {
+            const button = event.target;
+            const item = button.value;
+            ipcRenderer.send('item:add', item);
+            ipcRenderer.on('item:add', (event, item) => {
+            const li = document.createElement('li');
+            const itemData = document.createTextNode(item);
+            li.appendChild(itemData);
+            ul.appendChild(li);
+            });
+        }
+        });
+
+    </script>
+
+</body>
+</html>
