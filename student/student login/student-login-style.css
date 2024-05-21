@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    max-width: 400px;
+    max-height: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 210px;
+    border-radius: 12px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border-radius: 18px;
+    border: 1px solid #ccc;
+  }
+  
+  .Continue{
+    width: 85%;
+    padding: 10px 50px 10px 50px;
+    background: rgb(31, 113, 244);
+    color:wheat;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+#Log{
+  padding: 0 0 0 45px;
+}
+.back{
+  width: 100%;
+  padding: 10px 50px 10px 50px;
+  background: rgb(31, 113, 244);
+  color:wheat;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  }
+
+#back-button{
+  width: 150%;
+}
+
+.buttons { 
+  display: flex;
+  font-size: 10px;
+  width: 75%;
+  padding: 0 35px 5px 35px;
+  border-radius: 3px;
+  margin: 20px 10px; 
+  justify-content: space-between;
+  border-radius: 12px;
+  
+
+}
+.buttons1 { 
+  display: flex;
+  font-size: 10px;
+  width: 75%;
+  padding: 0 30px 5px 30px;
+  border-radius: 3px;
+  margin: 10px 10px; 
+  justify-content: space-between;
+
+}
+
+.pass{
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  color:rgb(5, 67, 90)
+}
+
+.update{
+  border: none;
+  cursor: pointer;
+}
+.change{
+  padding-right: 30px;
+}
+body{
+  background: #11d9f3;
+}
+
+.Continue:hover{
+  background-color: rgb(38, 96, 241);
+  transform: scale(1.1);
+}
+.back:hover{
+  background-color: rgb(38, 96, 241);
+  transform: scale(1.1);
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+  transform: scale(1.05);
+  border-color: rgb(19, 112, 19);
+}
