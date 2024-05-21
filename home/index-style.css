@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin : 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family : 'Roboto';
+    background-image: url('../images/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*college name*/
+.college-name {
+    font-size: 25px;;
+    display : flex;
+    justify-content: center;
+}
+/*top things*/
+.top-panel {
+    background-color: rgba(21, 179, 190, 0.93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 0;
+}
+/*headings*/
+.labels {
+    color: #00256f;
+    margin-top : 0;
+    flex-wrap: wrap;
+    font-weight: bolder;
+}
+
+.canteen {
+    margin-top : 30px;
+    font-size: 25px;
+    font-weight : bolder;
+}
+/*images*/
+.pic {
+    display : flex;
+    justify-content: center;
+}
+
+.logo {
+    margin-top: 55px;
+    margin-bottom : 0;
+}
+
+.main-frame {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top : 5rem;
+    padding : 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px 2px black;   
+    margin : 0 auto;
+    margin-top: 40px;
+    width : 670px;
+    height : 400px;
+    border-radius : 12px;
+}
+  
+.button-frame {
+    display: flex;
+    border-radius : 12px;
+}
+
+/*main buttons*/
+.student-button,.faculty-button {
+   margin-left: 10px;
+   height : 300px;
+   margin : 10px;
+   transition: transform 0.3s;
+   border-radius: 40px;
+}
+
+/*caption*/
+.naming {
+    display : flex;
+    margin-top : 16px;
+    font-size: 25px;
+}
+
+.student-name {
+    margin-left: 7.9rem;
+    color: #00256f;
+    
+}
+
+.image {
+    height: 270px;
+}
+
+.faculty-name {
+    margin-left : 16.5rem;
+    color: #00256f;
+}
+
+/*admin button*/
+.admin {
+    position : fixed;
+    bottom : 20px;
+    right : 20px;
+}
+
+.admin-button {
+    width : 60px;
+    color: #00256f;
+    border-radius: 12px;;
+    transition: transform 0.3s;
+}
+
+/*hover*/
+.student-button:hover {
+    transform: scale(0.9);
+}
+
+.faculty-button:hover {
+    transform: scale(0.9);
+}
+
+.admin-button:hover {
+    transform : scale(1.1);
+}
