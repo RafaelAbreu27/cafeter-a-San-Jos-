@@ -1,0 +1,13 @@
+PASOS PARA USAR LA CAFETERIA EN ELECTRON
+
+DESCARGAR NODE.JS
+https://nodejs.org/en/download/package-manager
+
+DESCARGAR ELECTRON
+https://www.electronjs.org/
+
+USAR npm install node_modules dentro del proyecto
+
+y para terminar usar npm start en una terminal dentro del proyecto
+
+disfrutar :)
